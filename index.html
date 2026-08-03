@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F4EEE4" />
+  <title>Skinfinity Lounge — Korean Skincare Studio in San Jose</title>
+  <meta name="description" content="Skinfinity Lounge is a Korean skincare studio in San Jose blending advanced techniques with a barrier-first, holistic approach. Where healthy skin becomes signature." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Skinfinity Lounge — Where healthy skin becomes signature." />
+  <meta property="og:description" content="Korean skincare studio in San Jose. Barrier repair, hydration, and long-term results." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✿</text></svg>" />
+</head>
+<body>
+
+  <!-- ░░░ Preloader ░░░ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <svg class="preloader__mark" viewBox="0 0 120 120" fill="none">
+        <path class="pl-draw" d="M60 8 C60 38 38 60 8 60 C38 60 60 82 60 112 C60 82 82 60 112 60 C82 60 60 38 60 8 Z"
+              stroke="currentColor" stroke-width="1.4" />
+        <circle class="pl-draw" cx="60" cy="60" r="50" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+      </svg>
+      <span class="preloader__word">Skinfinity</span>
+    </div>
+  </div>
+
+  <!-- ░░░ Cursor glow (desktop) ░░░ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- ░░░ Navigation ░░░ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Skinfinity Lounge home">
+        <svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <path d="M20 3 C20 13 13 20 3 20 C13 20 20 27 20 37 C20 27 27 20 37 20 C27 20 20 13 20 3 Z" fill="currentColor"/>
+        </svg>
+        <span class="brand__name">Skinfinity<span class="brand__sub">Lounge</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#philosophy">Philosophy</a>
+        <a href="#concerns">Your Skin</a>
+        <a href="#menu">Treatments</a>
+        <a href="#visit">The Visit</a>
+        <a href="#location">Visit Us</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="tel:+16692604627" class="nav__phone" aria-label="Call Skinfinity Lounge">(669) 260-4627</a>
+        <a href="#book" class="btn btn--solid btn--sm" data-magnetic>Book Now</a>
+      </div>
+
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ░░░ Mobile menu ░░░ -->
+  <div class="mobile" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile__links" aria-label="Mobile">
+      <a href="#philosophy"><span>01</span> Philosophy</a>
+      <a href="#concerns"><span>02</span> Your Skin</a>
+      <a href="#menu"><span>03</span> Treatments</a>
+      <a href="#visit"><span>04</span> The Visit</a>
+      <a href="#location"><span>05</span> Visit Us</a>
+    </nav>
+    <div class="mobile__foot">
+      <a href="tel:+16692604627">(669) 260-4627</a>
+      <a href="https://instagram.com/skinfinitylounge" target="_blank" rel="noopener">@skinfinitylounge</a>
+      <a href="#book" class="btn btn--solid">Book an Appointment</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ░░░ HERO ░░░ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="orb orb--1"></span>
+        <span class="orb orb--2"></span>
+        <span class="orb orb--3"></span>
+        <div class="grain"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow reveal" data-reveal>
+          <span class="eyebrow__dot"></span> San Jose · Korean Skincare Studio
+        </p>
+
+        <h1 class="hero__title">
+          <span class="line"><span data-word>Where</span> <span data-word>healthy</span></span>
+          <span class="line"><span data-word>skin</span> <span data-word class="italic">becomes</span></span>
+          <span class="line"><span data-word>signature.</span></span>
+        </h1>
+
+        <p class="hero__sub reveal" data-reveal data-reveal-delay="0.5">
+          A barrier-first ritual studio blending advanced Korean technique with holistic
+          care — built for hydration, repair, and skin that lasts.
+        </p>
+
+        <div class="hero__cta reveal" data-reveal data-reveal-delay="0.65">
+          <a href="#book" class="btn btn--solid" data-magnetic>Book Your Appointment</a>
+          <a href="#menu" class="btn btn--ghost" data-magnetic>
+            Explore Treatments
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- floating glass stat cards -->
+      <div class="hero__cards" aria-hidden="true">
+        <div class="glass-card glass-card--a reveal" data-reveal data-reveal-delay="0.8">
+          <span class="glass-card__big">90<i>min</i></span>
+          <span class="glass-card__label">Signature ritual, start to glow</span>
+        </div>
+        <div class="glass-card glass-card--b reveal" data-reveal data-reveal-delay="0.95">
+          <div class="rating">
+            <span class="rating__stars">★★★★★</span>
+            <span class="glass-card__label">Loved by San Jose skin</span>
+          </div>
+        </div>
+        <div class="glass-card glass-card--c reveal" data-reveal data-reveal-delay="1.05">
+          <span class="glass-card__big">PDRN</span>
+          <span class="glass-card__label">Nano-infusion regeneration</span>
+        </div>
+      </div>
+
+      <a href="#philosophy" class="hero__scroll" aria-label="Scroll to explore">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ░░░ Marquee ░░░ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Glass Skin</span><i>✦</i><span>Barrier Repair</span><i>✦</i><span>Korean Brightening</span><i>✦</i>
+        <span>PDRN Nano-Infusion</span><i>✦</i><span>Acne Detox</span><i>✦</i><span>Stem Cell Renewal</span><i>✦</i>
+        <span>RF Tightening</span><i>✦</i><span>Hydration</span><i>✦</i>
+        <span>Glass Skin</span><i>✦</i><span>Barrier Repair</span><i>✦</i><span>Korean Brightening</span><i>✦</i>
+        <span>PDRN Nano-Infusion</span><i>✦</i><span>Acne Detox</span><i>✦</i><span>Stem Cell Renewal</span><i>✦</i>
+        <span>RF Tightening</span><i>✦</i><span>Hydration</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ░░░ PHILOSOPHY ░░░ -->
+    <section class="philosophy section" id="philosophy">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num reveal" data-reveal>(01)</span>
+          <h2 class="sec-title reveal" data-reveal>The philosophy</h2>
+        </div>
+
+        <div class="philosophy__grid">
+          <div class="philosophy__lead reveal" data-reveal>
+            <p class="lead">
+              We believe great skin isn't a quick fix — it's a <em>practice</em>.
+              Every ritual is built barrier-first: restoring, hydrating, and
+              strengthening so results compound, visit after visit.
+            </p>
+            <p class="muted">
+              We're a team of passionate skincare specialists blending advanced Korean
+              skincare techniques with a holistic focus on skin health. Our priorities are
+              simple and uncompromising — barrier repair, deep hydration, and long-term
+              results you can see and feel.
+            </p>
+            <a href="#concerns" class="link-underline" data-magnetic>Find your ritual →</a>
+          </div>
+
+          <figure class="philosophy__art reveal" data-reveal data-reveal-delay="0.15" aria-hidden="true">
+            <svg viewBox="0 0 360 360" class="botanical">
+              <defs>
+                <linearGradient id="stem" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="var(--sage)"/>
+                  <stop offset="1" stop-color="var(--clay)"/>
+                </linearGradient>
+              </defs>
+              <g stroke="url(#stem)" stroke-width="1.1" fill="none" stroke-linecap="round">
+                <path class="grow" d="M180 340 C180 250 180 170 180 70"/>
+                <path class="grow" d="M180 250 C140 230 120 195 116 158 C150 168 172 205 180 248"/>
+                <path class="grow" d="M180 210 C220 192 244 158 248 120 C212 132 190 168 180 208"/>
+                <path class="grow" d="M180 160 C146 146 128 118 126 86 C156 98 172 128 180 158"/>
+                <path class="grow" d="M180 120 C214 108 234 80 236 50 C206 60 190 92 180 118"/>
+              </g>
+              <circle cx="180" cy="64" r="6" fill="var(--clay)"/>
+              <circle cx="180" cy="180" r="120" stroke="var(--line)" fill="none"/>
+            </svg>
+            <figcaption class="philosophy__caption">
+              <span class="quote-mark">“</span>
+              Consistency over quick fixes.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- stats -->
+        <ul class="stats reveal" data-reveal>
+          <li>
+            <span class="stat__num" data-count="9" data-suffix="">0</span>
+            <span class="stat__label">Signature facial rituals</span>
+          </li>
+          <li>
+            <span class="stat__num" data-count="100" data-suffix="%">0</span>
+            <span class="stat__label">Barrier-first formulations</span>
+          </li>
+          <li>
+            <span class="stat__num" data-count="7" data-suffix="">0</span>
+            <span class="stat__label">Days a week, by appointment</span>
+          </li>
+          <li>
+            <span class="stat__num stat__num--word">K-Beauty</span>
+            <span class="stat__label">Technique, holistic care</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ░░░ CONCERNS — interactive matcher ░░░ -->
+    <section class="concerns section" id="concerns">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num reveal" data-reveal>(02)</span>
+          <h2 class="sec-title reveal" data-reveal>What is your<br/>skin telling you?</h2>
+          <p class="sec-desc reveal" data-reveal>Tap a concern. We'll point you to the ritual built to answer it.</p>
+        </div>
+
+        <div class="matcher">
+          <div class="matcher__chips reveal" data-reveal role="tablist" aria-label="Skin concerns">
+            <button class="chip is-active" data-concern="acne" role="tab" aria-selected="true">Acne &amp; Breakouts</button>
+            <button class="chip" data-concern="aging" role="tab" aria-selected="false">Aging &amp; Fine Lines</button>
+            <button class="chip" data-concern="dehydration" role="tab" aria-selected="false">Dehydration &amp; Barrier</button>
+            <button class="chip" data-concern="dullness" role="tab" aria-selected="false">Dullness &amp; Texture</button>
+            <button class="chip" data-concern="sensitivity" role="tab" aria-selected="false">Sensitivity &amp; Irritation</button>
+          </div>
+
+          <div class="matcher__panel reveal" data-reveal data-reveal-delay="0.1" id="matcherPanel" aria-live="polite">
+            <!-- filled by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ TREATMENT MENU ░░░ -->
+    <section class="menu section" id="menu">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num reveal" data-reveal>(03)</span>
+          <h2 class="sec-title reveal" data-reveal>The treatment menu</h2>
+          <p class="sec-desc reveal" data-reveal>
+            Every facial includes a skin consultation, triple deep cleanse, lip scrub,
+            extractions as needed, and a face &amp; neck massage.
+          </p>
+        </div>
+
+        <!-- Category: Signature Facials -->
+        <div class="menu__cat reveal" data-reveal>
+          <h3 class="menu__cat-title"><span>Signature Facials</span><i></i></h3>
+        </div>
+        <div class="menu__list" data-stagger>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Skinfinity Signature Facial</span>
+              <span class="row__meta"><span class="tag">Bestseller</span><span class="row__dur">90 min</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>Collagen-silk or PDRN nano-infusion delivers powerful regenerative ingredients deep into the skin — our most complete ritual for rebound, bounce, and glow.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Express Glow</span>
+              <span class="row__meta"><span class="row__dur">50 min</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>A result-driven treatment designed to refresh and reset your skin in minimal time. The perfect lunch-break reset before an event.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Instant Glass Skin</span>
+              <span class="row__meta"><span class="tag tag--alt">Hydration</span><span class="row__dur">60 min</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>A deeply hydrating treatment designed for dry and dehydrated skin — flooding the barrier with moisture for that signature dewy, translucent finish.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Korean Brightening</span>
+              <span class="row__meta"><span class="row__dur">75 min</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>With Vitamin C nano-infusion, this facial helps brighten, smooth, and refresh the skin — targeting dullness and uneven tone at the source.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Acne Detox</span>
+              <span class="row__meta"><span class="tag tag--alt">Face Reality</span><span class="row__dur">75 min</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>Built around Face Reality products, this facial focuses on clearing breakouts, reducing inflammation, and restoring balance to congested skin.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">RF Skin Tightening Therapy</span>
+              <span class="row__meta"><span class="row__dur">90 min</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>Radio frequency stimulates collagen and improves skin elasticity — a non-invasive lift for firmer, more sculpted contours over time.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Luxury Stem Cell Anti-Aging</span>
+              <span class="row__meta"><span class="tag">Luxury</span><span class="row__dur">90 min</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>A high-performance treatment designed to rejuvenate and restore aging skin — our most advanced anti-aging ritual for visible renewal.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Customized Facial</span>
+              <span class="row__meta"><span class="row__dur">75 min</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>A personalized treatment tailored to your skin's unique needs and goals — designed live with your esthetician after a full consultation.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Clarifying Back Treatment</span>
+              <span class="row__meta"><span class="row__dur">60 min</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>A deep-cleansing back treatment designed to target breakouts, congestion, and texture in those hard-to-reach places.</p></div>
+          </article>
+        </div>
+
+        <!-- Category: Chemical Peels -->
+        <div class="menu__cat reveal" data-reveal>
+          <h3 class="menu__cat-title"><span>Chemical Peels</span><i></i></h3>
+        </div>
+        <div class="menu__list" data-stagger>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Green Sea Spicule Peel</span>
+              <span class="row__meta"><span class="tag tag--alt">Resurfacing</span><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>Micro-spicules stimulate cell turnover from within — a natural resurfacing that smooths texture and wakes up tired skin.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Acne Peel</span>
+              <span class="row__meta"><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>Targets breakouts, congestion, and excess oil — clarifying the complexion and helping to keep future breakouts in check.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Brightening Peel</span>
+              <span class="row__meta"><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>Addresses dullness and uneven skin tone for a brighter, more even, lit-from-within complexion.</p></div>
+          </article>
+        </div>
+
+        <!-- Category: Advanced Corrections -->
+        <div class="menu__cat reveal" data-reveal>
+          <h3 class="menu__cat-title"><span>Advanced Corrections</span><i></i></h3>
+        </div>
+        <div class="menu__list" data-stagger>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Acne Scars Therapy</span>
+              <span class="row__meta"><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>Specialized growth-factor serums boost collagen production to soften the look of acne scarring and restore a smoother surface.</p></div>
+          </article>
+          <article class="row" data-row>
+            <button class="row__head" aria-expanded="false">
+              <span class="row__name">Pore Tightening Therapy</span>
+              <span class="row__meta"><i class="row__plus"></i></span>
+            </button>
+            <div class="row__body"><p>Refines skin texture and visibly reduces the appearance of enlarged pores for a polished, refined finish.</p></div>
+          </article>
+        </div>
+
+        <!-- Add-ons -->
+        <div class="addons reveal" data-reveal>
+          <h3 class="addons__title">Enhance any ritual</h3>
+          <ul class="addons__list">
+            <li>Collagen Lip Mask</li>
+            <li>Hydrating Under-eye Patches</li>
+            <li>CO₂ Therapy</li>
+            <li>Dermaplaning</li>
+            <li>Microdermabrasion</li>
+            <li>Hydro-dermabrasion</li>
+            <li>Extra Extractions</li>
+          </ul>
+          <p class="addons__note">Pricing is shared at booking and during your consultation, tailored to your skin plan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ SIGNATURE SPOTLIGHT (dark) ░░░ -->
+    <section class="spotlight" id="signature">
+      <div class="spotlight__bg" aria-hidden="true">
+        <span class="orb orb--s1"></span>
+        <span class="orb orb--s2"></span>
+        <div class="grain"></div>
+      </div>
+      <div class="wrap spotlight__wrap">
+        <div class="spotlight__text">
+          <span class="eyebrow eyebrow--light reveal" data-reveal><span class="eyebrow__dot"></span> The signature</span>
+          <h2 class="spotlight__title reveal" data-reveal>
+            The Skinfinity <span class="italic">Signature</span> Facial
+          </h2>
+          <p class="spotlight__copy reveal" data-reveal>
+            Ninety minutes engineered around regeneration. We layer collagen-silk or PDRN
+            nano-infusion to drive regenerative actives deep where they work — then seal
+            it all with hydration and a face &amp; neck massage. You leave plumper,
+            brighter, and unmistakably <em>you</em>.
+          </p>
+          <ul class="spotlight__points reveal" data-reveal>
+            <li><b>Regenerate</b> PDRN &amp; collagen-silk nano-infusion</li>
+            <li><b>Restore</b> triple deep cleanse &amp; guided extractions</li>
+            <li><b>Relax</b> sculpting face &amp; neck massage</li>
+          </ul>
+          <a href="#book" class="btn btn--solid btn--glow reveal" data-reveal data-magnetic>Book the Signature</a>
+        </div>
+        <div class="spotlight__visual reveal" data-reveal data-reveal-delay="0.15" aria-hidden="true">
+          <div class="dewdrop">
+            <span class="dewdrop__ring"></span>
+            <span class="dewdrop__ring"></span>
+            <span class="dewdrop__core">90<i>min</i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ THE VISIT — process ░░░ -->
+    <section class="visit section" id="visit">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num reveal" data-reveal>(04)</span>
+          <h2 class="sec-title reveal" data-reveal>Your visit,<br/>step by step</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal" data-reveal>
+            <span class="step__num">01</span>
+            <h3>Consult</h3>
+            <p>We read your skin in person — barrier health, hydration, concerns — and shape the plan around it.</p>
+          </li>
+          <li class="step reveal" data-reveal data-reveal-delay="0.1">
+            <span class="step__num">02</span>
+            <h3>Cleanse</h3>
+            <p>A triple deep cleanse and lip scrub reset the canvas, with gentle extractions as needed.</p>
+          </li>
+          <li class="step reveal" data-reveal data-reveal-delay="0.2">
+            <span class="step__num">03</span>
+            <h3>Treat</h3>
+            <p>Targeted actives, nano-infusion, peels or devices — chosen for your skin that day.</p>
+          </li>
+          <li class="step reveal" data-reveal data-reveal-delay="0.3">
+            <span class="step__num">04</span>
+            <h3>Glow</h3>
+            <p>Massage, hydration, and SPF seal it in. You leave with a simple plan to keep results going.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ░░░ TESTIMONIALS ░░░ -->
+    <section class="reviews section" id="reviews">
+      <div class="wrap">
+        <div class="sec-head sec-head--center">
+          <span class="sec-num reveal" data-reveal>(05)</span>
+          <h2 class="sec-title reveal" data-reveal>Loved by San Jose skin</h2>
+        </div>
+      </div>
+      <div class="reviews__track-wrap">
+        <div class="reviews__track">
+          <figure class="review">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>“My skin has never looked this hydrated. The facial was relaxing and the results lasted — I'm officially a regular.”</blockquote>
+            <figcaption>— Emily T.</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>“So professional and knowledgeable. They actually explained my skin to me instead of upselling. My glow is unreal.”</blockquote>
+            <figcaption>— Aimee R.</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>“The Korean Brightening facial completely evened out my tone. Calm space, gentle hands, real results.”</blockquote>
+            <figcaption>— Jasmine L.</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>“Came in for acne and left with a real plan. A few visits in and my breakouts have genuinely calmed down.”</blockquote>
+            <figcaption>— Daniel K.</figcaption>
+          </figure>
+          <!-- duplicate for seamless loop -->
+          <figure class="review" aria-hidden="true">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>“My skin has never looked this hydrated. The facial was relaxing and the results lasted — I'm officially a regular.”</blockquote>
+            <figcaption>— Emily T.</figcaption>
+          </figure>
+          <figure class="review" aria-hidden="true">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>“So professional and knowledgeable. They actually explained my skin to me instead of upselling. My glow is unreal.”</blockquote>
+            <figcaption>— Aimee R.</figcaption>
+          </figure>
+          <figure class="review" aria-hidden="true">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>“The Korean Brightening facial completely evened out my tone. Calm space, gentle hands, real results.”</blockquote>
+            <figcaption>— Jasmine L.</figcaption>
+          </figure>
+          <figure class="review" aria-hidden="true">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>“Came in for acne and left with a real plan. A few visits in and my breakouts have genuinely calmed down.”</blockquote>
+            <figcaption>— Daniel K.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ GUIDELINES / FAQ ░░░ -->
+    <section class="faq section" id="faq">
+      <div class="wrap faq__wrap">
+        <div class="sec-head">
+          <span class="sec-num reveal" data-reveal>(06)</span>
+          <h2 class="sec-title reveal" data-reveal>Before &amp; after<br/>your treatment</h2>
+          <p class="sec-desc reveal" data-reveal>A little prep goes a long way. Here's how to get the most from every visit.</p>
+        </div>
+
+        <div class="faq__list" data-stagger>
+          <details class="qa reveal" data-reveal>
+            <summary><span>How do I prepare? (3–5 days before)</span><i class="qa__plus"></i></summary>
+            <div class="qa__body"><p>Avoid retinol, tretinoin, and strong exfoliants (AHA/BHA, scrubs). Skip waxing, laser, or hair removal on the treatment area, and limit excessive sun exposure and tanning.</p></div>
+          </details>
+          <details class="qa reveal" data-reveal>
+            <summary><span>The day of my appointment</span><i class="qa__plus"></i></summary>
+            <div class="qa__body"><p>Arrive with clean skin and no heavy makeup if possible, and stay hydrated. Let your esthetician know about any changes in your skin, health, or medications. Men: please shave at least 24 hours prior if applicable.</p></div>
+          </details>
+          <details class="qa reveal" data-reveal>
+            <summary><span>Aftercare: the first 24–48 hours</span><i class="qa__plus"></i></summary>
+            <div class="qa__body"><p>Avoid heat (sauna, steam, hot showers, workouts) and don't touch or pick the skin. Pause active ingredients like retinol, acids, and benzoyl peroxide. Keep it simple: gentle cleanser, moisturizer, and SPF.</p></div>
+          </details>
+          <details class="qa reveal" data-reveal>
+            <summary><span>Ongoing care</span><i class="qa__plus"></i></summary>
+            <div class="qa__body"><p>Wear SPF daily and reapply as needed, avoid direct sun exposure, and keep skin hydrated and moisturized. For advanced or corrective treatments, strictly avoid actives until skin has fully healed and never pick or exfoliate peeling skin.</p></div>
+          </details>
+          <details class="qa reveal" data-reveal>
+            <summary><span>When should I reach out?</span><i class="qa__plus"></i></summary>
+            <div class="qa__body"><p>Contact us with any prolonged irritation or discomfort, unusual reactions, or questions about your skin or the healing process. We're here between visits too — call <a href="tel:+16692604627">(669) 260-4627</a>.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ LOCATION ░░░ -->
+    <section class="location section" id="location">
+      <div class="wrap location__grid">
+        <div class="location__info">
+          <span class="sec-num reveal" data-reveal>(07)</span>
+          <h2 class="sec-title reveal" data-reveal>Visit the<br/>lounge</h2>
+
+          <div class="location__block reveal" data-reveal>
+            <h3>Studio</h3>
+            <p>1630 Oakland Road, Ste A-206<br/>San Jose, CA 95131</p>
+            <a class="link-underline" href="https://maps.google.com/?q=1630+Oakland+Road+ste+A-206+San+Jose+CA+95131" target="_blank" rel="noopener">Get directions →</a>
+          </div>
+
+          <div class="location__block reveal" data-reveal>
+            <h3>Hours</h3>
+            <ul class="hours">
+              <li><span>Mon — Fri</span><span>11 AM – 7 PM</span></li>
+              <li><span>Sat — Sun</span><span>10 AM – 7 PM</span></li>
+            </ul>
+          </div>
+
+          <div class="location__block reveal" data-reveal>
+            <h3>Reach us</h3>
+            <ul class="contact">
+              <li><a href="tel:+16692604627">(669) 260-4627</a></li>
+              <li><a href="mailto:contact@skinfinitylounge.com">contact@skinfinitylounge.com</a></li>
+              <li><a href="https://instagram.com/skinfinitylounge" target="_blank" rel="noopener">@skinfinitylounge</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="location__map reveal" data-reveal data-reveal-delay="0.15" aria-hidden="true">
+          <div class="map-card">
+            <div class="map-card__grid"></div>
+            <span class="map-card__pin">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+            </span>
+            <span class="map-card__label">Skinfinity Lounge · Oakland Rd</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ BOOK CTA ░░░ -->
+    <section class="book" id="book">
+      <div class="book__bg" aria-hidden="true">
+        <span class="orb orb--b1"></span>
+        <span class="orb orb--b2"></span>
+        <div class="grain"></div>
+      </div>
+      <div class="wrap book__wrap">
+        <p class="eyebrow eyebrow--light reveal" data-reveal><span class="eyebrow__dot"></span> Ready when you are</p>
+        <h2 class="book__title reveal" data-reveal>Book your <span class="italic">glow.</span></h2>
+        <p class="book__sub reveal" data-reveal>
+          New here? Start with a consultation and we'll build your plan. Reach us by phone,
+          email, or Instagram — we'll find your time.
+        </p>
+        <div class="book__actions reveal" data-reveal>
+          <a href="tel:+16692604627" class="btn btn--solid btn--lg" data-magnetic>Call (669) 260-4627</a>
+          <a href="https://instagram.com/skinfinitylounge" target="_blank" rel="noopener" class="btn btn--ghost btn--ghost-light btn--lg" data-magnetic>Message on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="brand brand--footer">
+          <svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path d="M20 3 C20 13 13 20 3 20 C13 20 20 27 20 37 C20 27 27 20 37 20 C27 20 20 13 20 3 Z" fill="currentColor"/>
+          </svg>
+          <span class="brand__name">Skinfinity<span class="brand__sub">Lounge</span></span>
+        </a>
+        <p class="footer__tag">Where healthy skin becomes signature.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Footer">
+        <h4>Explore</h4>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#concerns">Your Skin</a>
+        <a href="#menu">Treatments</a>
+        <a href="#visit">The Visit</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Footer contact">
+        <h4>Visit</h4>
+        <a href="https://maps.google.com/?q=1630+Oakland+Road+ste+A-206+San+Jose+CA+95131" target="_blank" rel="noopener">1630 Oakland Rd, A-206<br/>San Jose, CA 95131</a>
+        <a href="tel:+16692604627">(669) 260-4627</a>
+        <a href="mailto:contact@skinfinitylounge.com">contact@skinfinitylounge.com</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <p class="footer__hours">Mon–Fri · 11–7<br/>Sat–Sun · 10–7</p>
+        <a href="https://instagram.com/skinfinitylounge" target="_blank" rel="noopener" class="footer__ig">@skinfinitylounge</a>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <span>© <span id="year">2026</span> Skinfinity Lounge. All rights reserved.</span>
+      <span class="footer__credit">Crafted with care in San Jose</span>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

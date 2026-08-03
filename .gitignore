@@ -1,0 +1,12 @@
+# macOS / OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor / agent tooling (local-only)
+.claude/
+
+# Dependencies (none today, kept for hygiene)
+node_modules/
