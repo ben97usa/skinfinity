@@ -146,7 +146,7 @@
       recos: [
         { name: 'Luxury Stem Cell Anti-Aging', meta: '90 min' },
         { name: 'RF Skin Tightening Therapy', meta: '90 min' },
-        { name: 'Skinfinity Signature Facial', meta: '90 min' }
+        { name: 'Skinfinity Signature Facial', meta: '80 min' }
       ]
     },
     dehydration: {
@@ -156,7 +156,7 @@
       grad: 'linear-gradient(135deg,#E7C6CF,#cf9aa9)',
       recos: [
         { name: 'Instant Glass Skin', meta: '60 min' },
-        { name: 'Skinfinity Signature Facial', meta: '90 min' },
+        { name: 'Skinfinity Signature Facial', meta: '80 min' },
         { name: 'Customized Facial', meta: '75 min' }
       ]
     },
