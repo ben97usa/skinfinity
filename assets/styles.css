@@ -166,6 +166,7 @@ button{ font:inherit; color:inherit; cursor:pointer; background:none; border:non
 .nav.is-hidden{ transform:translateY(-100%); }
 
 .brand{ display:inline-flex; align-items:center; gap:.6rem; color:var(--ink); }
+.brand__logo{ height:74px; width:190px; display:block; object-fit:fill; }
 .brand__mark{ width:28px; height:28px; color:var(--clay); transition:transform .6s var(--ease); }
 .brand:hover .brand__mark{ transform:rotate(90deg); }
 .brand__name{ font-family:var(--font-disp); font-size:1.25rem; font-weight:430; letter-spacing:-.01em; line-height:1; }
@@ -215,7 +216,9 @@ button{ font:inherit; color:inherit; cursor:pointer; background:none; border:non
    ============================================================ */
 .hero{ position:relative; min-height:100svh; display:flex; flex-direction:column; justify-content:center;
   padding:9rem var(--gutter) 3rem; overflow:hidden; isolation:isolate; }
-.hero__content{ max-width:var(--maxw); margin-inline:auto; width:100%; position:relative; z-index:2; }
+.hero__grid{ position:relative; z-index:2; max-width:var(--maxw); margin-inline:auto; width:100%;
+  display:grid; grid-template-columns:1.2fr .8fr; gap:clamp(2rem,6vw,5rem); align-items:center; }
+.hero__content{ min-width:0; }
 
 .hero__bg{ position:absolute; inset:0; z-index:0; overflow:hidden; }
 .orb{ position:absolute; border-radius:50%; filter:blur(60px); opacity:.7; }
@@ -240,21 +243,10 @@ button{ font:inherit; color:inherit; cursor:pointer; background:none; border:non
   color:var(--ink-soft); line-height:1.55; }
 .hero__cta{ margin-top:2.4rem; display:flex; gap:1rem; flex-wrap:wrap; }
 
-.hero__cards{ position:absolute; inset:0; z-index:1; max-width:var(--maxw); margin-inline:auto;
-  pointer-events:none; display:none; }
-.glass-card{ position:absolute; pointer-events:auto;
-  background:color-mix(in srgb,var(--surface) 55%,transparent);
-  backdrop-filter:blur(14px) saturate(1.3);
-  border:1px solid rgba(255,255,255,.55);
-  border-radius:20px; padding:1.1rem 1.3rem; box-shadow:0 20px 50px -24px rgba(60,40,25,.4);
-  display:flex; flex-direction:column; gap:.3rem; min-width:170px; }
-.glass-card__big{ font-family:var(--font-disp); font-size:2rem; font-weight:380; line-height:1; }
-.glass-card__big i{ font-style:normal; font-size:.9rem; color:var(--clay); margin-left:.15em; }
-.glass-card__label{ font-size:.78rem; color:var(--ink-soft); letter-spacing:.01em; }
-.glass-card--a{ right:2vw; top:24%; animation:bob 7s ease-in-out infinite; }
-.glass-card--b{ right:12vw; top:52%; animation:bob 8s ease-in-out infinite .5s; }
-.glass-card--c{ right:0; top:74%; animation:bob 9s ease-in-out infinite 1s; }
-.rating__stars{ color:var(--clay); letter-spacing:.12em; font-size:1.05rem; }
+.hero__photo{ width:100%; max-width:420px; margin-left:auto; aspect-ratio:3/4;
+  border-radius:var(--radius-lg); overflow:hidden; border:1px solid rgba(255,255,255,.55);
+  box-shadow:0 30px 60px -24px rgba(60,40,25,.4); }
+.hero__photo img{ width:100%; height:100%; object-fit:cover; display:block; }
 
 .hero__scroll{ position:absolute; bottom:2.2rem; left:50%; transform:translateX(-50%); z-index:2;
   display:flex; flex-direction:column; align-items:center; gap:.7rem; color:var(--ink-soft);
@@ -560,11 +552,11 @@ button{ font:inherit; color:inherit; cursor:pointer; background:none; border:non
 /* ============================================================
    RESPONSIVE
    ============================================================ */
-@media (min-width:1080px){ .hero__cards{ display:block; } }
-
 @media (max-width:980px){
   .nav__links, .nav__phone{ display:none; }
   .nav__burger{ display:block; }
+  .hero__grid{ grid-template-columns:1fr; }
+  .hero__photo{ max-width:340px; margin-inline:auto; }
   .philosophy__grid{ grid-template-columns:1fr; }
   .philosophy__art{ order:-1; max-width:340px; margin-inline:auto; }
   .matcher__panel{ grid-template-columns:1fr; }
@@ -588,6 +580,7 @@ button{ font:inherit; color:inherit; cursor:pointer; background:none; border:non
   .nav__inner{ padding-inline:var(--gutter); gap:.7rem; }
   .nav__actions{ gap:.5rem; }
   .brand__name{ font-size:1.1rem; }
+  .brand__logo{ height:52px; width:132px; }
   .btn--sm{ --pad-x:.95rem; }
   .row__name{ font-size:1.2rem; }
   .row__meta{ gap:.6rem; }
